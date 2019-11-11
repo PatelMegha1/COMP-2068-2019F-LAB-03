@@ -1,0 +1,25 @@
+head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+body
+    form(action='/registration' method='post')
+        .container
+            h1 Register
+            p Please fill in this form to create an account.
+            hr
+            label(for='username')
+            b Username
+            input(type='text', placeholder='Enter your name', name='username', required='')
+            label(for='email')
+            b Email
+            input(type='email', placeholder='Enter Email', name='email', required='')
+            label(for='password')
+            b Password
+            input(type='password', placeholder='Enter Password', name='password', required='')
+            hr
+            button.registerbtn(type='submit') Register
+        .container.signin
+            p
+            | Already have an account? 
+            a(href='/login') Sign in
+            | .

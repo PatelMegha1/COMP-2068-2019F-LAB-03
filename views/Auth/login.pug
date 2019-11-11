@@ -1,0 +1,25 @@
+head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+
+body
+    h2 Login Form
+    form(action ='/login' method='post')
+    .container
+        label(for='username')
+        b Username
+        input(type='text', placeholder='Enter Username', name='username', required='') 
+        label(for='password')
+        b Password
+        input(type='password', placeholder='Enter Password', name='password', required='')
+        
+
+        //- label(for='email')
+        //- b Email
+        //- input(type='email', placeholder='Enter Email', name='email', required='')
+
+        //- button.loginbtn(type='submit') Login
+        input(type="submit", value="Login")
+
+    .container(style='background-color:#f1f1f1')
+        button.cancelbtn(type='button') Cancel

@@ -1,0 +1,14 @@
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+const passportLocalMongoose = require('passport-local-mongoose');
+
+// Create the User Schema
+const userSchema = new Schema({});
+
+userSchema.plugin(passportLocalMongoose);
+// Use the bridge between mongoose and passport local
+
+// Create the user based on the above schema
+const user = mongoose.model('User', userSchema);
+
+module.exports = user;

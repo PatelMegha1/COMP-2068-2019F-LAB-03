@@ -1,0 +1,23 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(style='font-size:40px;',href='#') Megha Patel
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Home 
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href='#') About
+      li.nav-item
+        a.nav-link(href='#') Projects
+      li.nav-item
+        a.nav-link(href='#') Services
+      li.nav-item
+        a.nav-link(href='#') Contact
+    form-inline.my-2.my-lg-0
+      button.btn.btn-outline-success.my-2.my-sm-0(style='font-size: 20px;color:black;') 
+       a(href='./login') Login
+      button.btn.btn-outline-success.my-2.my-sm-0(style='margin:10px;font-size: 20px;color:black;' type='submit')
+       a(href='./registration') Registration
